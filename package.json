@@ -4,8 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css" : "tailwindcss -i ./pranayakhadgi.github.io/styles/input.css -o ./pranayakhadgi.github.io/styles/output.css --watch"
+    "build": "node build.js",
+    "watch": "node watch.js",
+    "build-css": "tailwindcss -i ./pranayakhadgi.github.io/styles/input.css -o ./pranayakhadgi.github.io/styles/output.css --watch",
+    "dev": "npm run watch",
+    "prebuild": "echo 'Running pre-build checks...'",
+    "postbuild": "echo 'Build completed. Remember to commit both CSS and HTML files.'"
   },
   "keywords": [],
   "author": "",
