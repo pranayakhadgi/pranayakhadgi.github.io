@@ -7,5 +7,5 @@ function generateCacheHash(filePath) {
     return crypto.createHash('md5').update(content).digest('hex').substring(0, 8);
 }
 
-const cssHash = generateCacheHash('./styles/output.css');
+const cssHash = generateCacheHash('./pranayakhadgi.github.io/styles/output.css');
 console.log(`Current CSS hash: ${cssHash}`);
